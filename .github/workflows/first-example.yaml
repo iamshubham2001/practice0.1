@@ -16,4 +16,4 @@ jobs:
       run: pwd
 
     - name: readme
-      run: cat README.md
+      run: cat notes.md
