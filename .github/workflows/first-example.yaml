@@ -17,3 +17,9 @@ jobs:
 
     - name: readme
       run: cat notes.md
+
+    - name: Check files
+      run: |
+        pwd
+        ls -la
+        find . -name "notes.md"
