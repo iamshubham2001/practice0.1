@@ -15,8 +15,6 @@ jobs:
     - name: print working directory
       run: pwd
 
-    - name: readme
-      run: cat notes.md
 
     - name: Check files
       run: |
