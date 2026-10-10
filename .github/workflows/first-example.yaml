@@ -21,3 +21,6 @@ jobs:
         pwd
         ls -la
         find . -name "notes.md"
+
+    - name: Read file content
+      run: cat notes.md
