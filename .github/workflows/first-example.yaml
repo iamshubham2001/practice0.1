@@ -7,21 +7,12 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
-    - name: WELCOME MESSAGE
-      run: echo "Hello World"
-
-    - name: listfiles
-      run: ls -al
-
-    - name: print working directory
-      run: pwd
-
-
-    - name: Check files
+    - name: List and read files
       run: |
         pwd
         ls -la
         find . -name "notes.md"
+        echo "Hi shubham here!"
 
-    # - name: Read file content
-    #   run: cat notes.md
+    - name: generate ASCII artwork 
+      run: cowsay -f dragon "Hello from GitHub Actions!" >> dragon.txt
