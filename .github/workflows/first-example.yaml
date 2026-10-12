@@ -3,7 +3,10 @@ on: push
 
 jobs: 
   first-job:
-    runs-on: ubuntu-latest 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
     
     steps: 
     - name: WELCOME MESSAGE
@@ -22,5 +25,5 @@ jobs:
         ls -la
         find . -name "notes.md"
 
-    - name: Read file content
-      run: cat notes.md
+    # - name: Read file content
+    #   run: cat notes.md
