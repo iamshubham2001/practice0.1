@@ -16,4 +16,4 @@ jobs:
         echo "Hi shubham here!"
 
     - name: generate ASCII artwork 
-      run: cowsay -f GitHub "Hello from GitHub Actions!" >> random.txt
+      run: cowsay "Hello from GitHub Actions!" >> random.txt

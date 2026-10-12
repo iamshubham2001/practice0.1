@@ -12,13 +12,13 @@ jobs:
       run: sudo apt-get install -y cowsay
 
     - name: Execute Cowsay CMD
-      run: cowsay -f GitHub "Hello from GitHub Actions!" >> random.txt
+      run: cowsay "Hello from GitHub Actions!" >> random.txt
 
     - name: Test file Exists
-      run: grep -i "dragon" dragon.txt
+      run: grep -i "github" random.txt
     
     - name: Read file content
-      run: cat dragon.txt
+      run: cat random.txt
 
     - name: list repo files
       run: ls -ltra
