@@ -8,19 +8,9 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
-    - name: Install cowsay program
-      run: sudo apt-get install -y cowsay
-
-    - name: Execute Cowsay CMD
-      run: cowsay "Hello from GitHub Actions!" >> random.txt
-
-    - name: Test file Exists
-      run: grep -i "github" random.txt
-    
-    - name: Read file content
-      run: cat random.txt
-
     - name: list repo files
       run: ls -ltra
+    - name: Run the script 
+      run: ./ascii-script.sh
 
     
