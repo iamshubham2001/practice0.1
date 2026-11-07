@@ -1,4 +1,4 @@
-name: Expression Practice
+name: Expression/Context Practice
 on: 
   push:
 
@@ -10,6 +10,7 @@ jobs:
       - name: Display repository information
         run: |
           echo "Repository: ${{ github.repository }}"
+          echo "Branch: ${{ github.ref_name }}"
           echo "Event: ${{ github.event_name }}"
 
           
