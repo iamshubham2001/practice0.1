@@ -1,0 +1,11 @@
+name: conditional workflow
+on: 
+  push:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy application
+        if: github.ref_name == 'main'
+        run: echo "deploying application"
