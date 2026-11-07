@@ -1,0 +1,14 @@
+name: Trigger Practice
+on: 
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  trigger-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    -  name: Print message
+       run: echo "CI pipeline started"
+      
