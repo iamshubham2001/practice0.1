@@ -1,2 +1,2 @@
-# practice0.1
+# GitHub Action
 Github 
